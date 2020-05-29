@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item"
+    xmlns:tools="http://schemas.android.com/tools">
+
+<data>
+
+<variable
+    name="item"
+
+    type="de.telekom.sea.mystuff.frontend.android.model.Item" />
+</data>
+
+<LinearLayout
+android:layout_height="100dp"
+android:layout_width="match_parent">
+
+<TextView
+android:id="@+id/name"
+android:layout_height="wrap_content"
+android:layout_weight="1"
+android:layout_width="wrap_content"
+android:text="@{item.name}"
+android:textSize="30sp" />
+
+<TextView
+android:id="@+id/description"
+android:layout_height="wrap_content"
+android:layout_weight="1"
+android:layout_width="wrap_content"
+android:text="@{item.description}"
+android:textSize="30sp" />
+
+<TextView
+android:id="@+id/location"
+android:layout_height="wrap_content"
+android:layout_weight="1"
+android:layout_width="wrap_content"
+android:text="@{item.location}"
+android:textSize="30sp" />
+
+    </LinearLayout>
+
+    </layout>
